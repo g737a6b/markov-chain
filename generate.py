@@ -1,6 +1,7 @@
+import os
 import markovify
 
-with open("./corpus.txt") as file:
+with open(os.path.dirname(__file__) + "/corpus.txt") as file:
 	text = file.read()
 
 text_model = markovify.NewlineText(text)
