@@ -21,7 +21,7 @@ def split(text):
 	return " ".join(keywords);
 
 def main():
-	result_file_path = "./input.txt"
+	result_file_path = "./corpus.txt"
 	if os.path.exists(result_file_path): os.remove(result_file_path)
 	result_file = open(result_file_path, "a")
 	with open("./original.txt", "r") as file:
